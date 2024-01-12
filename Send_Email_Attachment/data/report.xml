@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Template Xml -->
+    <template id="the_template">
+        <t t-call="web.html_container">
+               <!-- Template Body -->
+        </t>
+    </template>
+
+    <!-- Report Action -->
+     <report id="action_report_attachment"
+          model="send.email.attachment"
+          string="Send Email With Attachment"
+          report_type="qweb-pdf"
+          name="Send_Email_Attachment.the_template"
+          file="Send_Email_Attachment.the_template"
+          menu="True"
+     />
+</odoo>
